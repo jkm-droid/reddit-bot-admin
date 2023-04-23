@@ -16,5 +16,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(UserSeeder::class);
         $this->call(BotSeeder::class);
+        $this->call(SubRedditSeeder::class);
+        $this->call(KeywordSeeder::class);
     }
 }

@@ -26,7 +26,7 @@ class AddIsLockedFieldToKeywordsTable extends Migration
     public function down()
     {
         Schema::table('keywords', function (Blueprint $table) {
-            $table->boolean('is_locked')->default(0);
+            $table->dropColumn('is_locked');
         });
     }
 }
